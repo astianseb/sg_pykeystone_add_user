@@ -5,16 +5,17 @@ import csv
 import string
 import random
 import sys
+import os
 
-#USER = os.environ['OS_USERNAME']
-#PASS = os.environ['OS_PASSWORD']
-#TENANT_NAME = os.environ['OS_TENANT']
-#KEYSTONE_URL = os.environ['OS_AUTH_URL']
+USER = os.environ['OS_USERNAME']
+PASS = os.environ['OS_PASSWORD']
+TENANT_NAME = os.environ['OS_TENANT_NAME']
+KEYSTONE_URL = os.environ['OS_AUTH_URL']
 
-USER = "admin"
-PASS = "0641540afdcb4e91"
-TENANT_NAME = "admin"
-KEYSTONE_URL = "http://172.29.68.13:35357/v2.0/"
+#USER = "admin"
+#PASS = "0641540afdcb4e91"
+#TENANT_NAME = "admin"
+#KEYSTONE_URL = "http://172.29.68.13:35357/v2.0/"
 CSVFILE = "user_names_emails.csv"
 
 BULK_TENANT = 'openstack'
