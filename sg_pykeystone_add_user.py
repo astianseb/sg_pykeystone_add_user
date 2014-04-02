@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 __author__ = 'sebastian'
 
 from keystoneclient.v2_0 import client
