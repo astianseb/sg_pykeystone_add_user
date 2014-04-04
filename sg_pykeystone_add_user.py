@@ -1,5 +1,19 @@
 __author__ = 'sebastian'
 
+# Simple script to add users into openstack in a bulk. Users are taken from
+# CSV file with following format:
+# user_name,user_id,user_email
+# Example:
+# John Doe,jdoe,jdoe@email.com
+#
+# CSV file should be in the same directory as executed script
+#
+# Usage: python sg_pykeystone_add_user.py
+#
+# Copyright: astianseb
+# April, 2014
+
+
 from keystoneclient.v2_0 import client
 from keystoneclient.v2_0 import shell
 import csv
